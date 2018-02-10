@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/krittikamanagoli/.android/build-cache/5c904196fbe484f247cce1297c87903d6a275708/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/Users/krittikamanagoli/Desktop/bits/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_90a658553a2bd03d32508bedc2eb6ef7d2004ad4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/krittikamanagoli/.android/build-cache/2a7dd1d654b472ab0c4bb64cd3bcd0bba55f8985/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/Users/krittikamanagoli/Desktop/bits/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d5a6b2bfc510fce173aa39acf5f074572030c3a2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/krittikamanagoli/.android/build-cache/3859ba4cf9b065a2ecb22f802267f23b4d777265/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/krittikamanagoli/Desktop/bits/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0cca6ac7564808c2916d9963adb0707a2fbbfd61/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/krittikamanagoli/Desktop/bits/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="/Users/krittikamanagoli/Desktop/bits/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_f12d7604b364f455c9bee6490b305be8f554158c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/krittikamanagoli/Desktop/bits/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c50818ed73b54bfc30595fb417ff3878412d58ca">
+        <dex dex="/Users/krittikamanagoli/Desktop/bits/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_cf3e7269227f2901023f068e2dbf75a94520b514/classes.dex" />
+    </item>
+
+</items>
