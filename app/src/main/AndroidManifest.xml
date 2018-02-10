@@ -24,13 +24,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
 
-    <activity android:name=".Profile_Activity">
+        <activity android:name=".Profile_Activity">
 
-    </activity>
+        </activity>
 
-=======
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login"
@@ -39,7 +37,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.krittikamanagoli.bits.MainActivity" />
         </activity>
->>>>>>> e87acde62f9a87169874d896390f51af655f6fa8
+
     </application>
 
 </manifest>
