@@ -10,10 +10,15 @@ import android.widget.Toast;
 
 import com.amazonaws.mobile.client.AWSMobileClient;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
+import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBQueryExpression;
+import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.PaginatedList;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;
 
 import com.amazonaws.mobile.auth.core.IdentityManager;
 import com.amazonaws.mobile.config.AWSConfiguration;
+import com.amazonaws.services.dynamodbv2.model.AttributeValue;
+import com.amazonaws.services.dynamodbv2.model.ComparisonOperator;
+import com.amazonaws.services.dynamodbv2.model.Condition;
 
 public class CreateRequest extends AppCompatActivity {
     DynamoDBMapper dynamoDBMapper;
@@ -41,16 +46,48 @@ public class CreateRequest extends AppCompatActivity {
         AWSConfiguration awsConfiguration = new AWSConfiguration(context);
 
         final IdentityManager identityManager = new IdentityManager(context, awsConfiguration);
+        userId = identityManager.getCachedUserID();
 
         final RequestsDO request = new RequestsDO();
-        request.setUserId(identityManager.getCachedUserID());
-        request.setTransactionId(determineTransactionId());
+        request.setUserId(userId);
 
-        dynamoDBMapper.query(RequestsDO.class, )
+        //determine transactionId
+        Condition rangeKeyCondition = new Condition()
+                .withComparisonOperator(ComparisonOperator.EQ)
+                .withAttributeValueList(new AttributeValue().withS(userId));
 
-    }
+        DynamoDBQueryExpression queryExpression = new DynamoDBQueryExpression()
+                .withHashKeyValues(request)
+                .withRangeKeyCondition("userId", rangeKeyCondition)
+                .withConsistentRead(false);
 
-    private double determineTransactionId(){
-        return -1;
+        PaginatedList<RequestsDO> result = dynamoDBMapper.query(RequestsDO.class, queryExpression);
+
+        transactionId = result.size() + 1;
+        request.setTransactionId(transactionId);
+
+
+        // set values from textviews here
+        requestAmount = 10;
+        title = "dummy_title";
+        description = "dummy_description";
+
+        request.setAmountRequested(requestAmount);
+        request.setTitle(title);
+        request.setDescription(description);
+
+        // push request to db
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                // Item saved
+                dynamoDBMapper.save(request);
+                Log.d("description", dynamoDBMapper.load(
+                        RequestsDO.class,
+                        identityManager.getCachedUserID()).getDescription());
+            }
+        }).start();
+
     }
 }
