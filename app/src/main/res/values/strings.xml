@@ -11,6 +11,9 @@
     <string name="request_history">Request History</string>
     <string name="title_activity_login">Sign in</string>
 
+
+    <string name="request_tab">Request</string>
+
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>
@@ -23,5 +26,10 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="title_activity_history_page__">HistoryPage_Activity_</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 
 </resources>
