@@ -46,7 +46,6 @@ public class CreateRequest extends AppCompatActivity {
         request.setUserId(identityManager.getCachedUserID());
         request.setTransactionId(determineTransactionId());
 
-        dynamoDBMapper.query(RequestsDO.class, )
 
     }
 

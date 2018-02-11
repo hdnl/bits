@@ -42,5 +42,9 @@
     <string name="request_5">Request #5</string>
     <string name="request_4">Request #4</string>
     <string name="request_3">Request #3</string>
+    <string name="request_option">Item</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
