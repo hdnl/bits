@@ -9,6 +9,7 @@ import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBTable;
 public class ProfileDO {
     private String _userId;
     private Double _age;
+    private String _name;
     private String _bio;
     private String _location;
 
@@ -18,9 +19,18 @@ public class ProfileDO {
         return _userId;
     }
 
+    public void setName(final String _name) {
+        this._name = _name;
+    }
+    @DynamoDBAttribute(attributeName = "name")
+    public String getName() {
+        return _name;
+    }
+
     public void setUserId(final String _userId) {
         this._userId = _userId;
     }
+
     @DynamoDBAttribute(attributeName = "age")
     public Double getAge() {
         return _age;
@@ -29,6 +39,7 @@ public class ProfileDO {
     public void setAge(final Double _age) {
         this._age = _age;
     }
+    
     @DynamoDBAttribute(attributeName = "bio")
     public String getBio() {
         return _bio;
@@ -37,6 +48,7 @@ public class ProfileDO {
     public void setBio(final String _bio) {
         this._bio = _bio;
     }
+
     @DynamoDBAttribute(attributeName = "location")
     public String getLocation() {
         return _location;
