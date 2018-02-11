@@ -47,4 +47,12 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+
+    <!-- Strings related to create profile -->
+    <string name="create_profile">Create Profile</string>
+    <string name="profile_name">Name</string>
+    <string name="profile_age">Age</string>
+    <string name="profile_location">Location</string>
+    <string name="profile_bio">Bio</string>
+
 </resources>

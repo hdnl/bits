@@ -19,6 +19,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.util.Log;
 import android.widget.Toast;
@@ -40,8 +41,7 @@ import com.amazonaws.mobile.config.AWSConfiguration;
 
 public class CreateProfile extends AppCompatActivity {
     DynamoDBMapper dynamoDBMapper;
-    String name, location, bio;
-    double age;
+    EditText name, location, bio, age;
 
 
     @Override
@@ -71,15 +71,20 @@ public class CreateProfile extends AppCompatActivity {
         }
 
         // set values
-        name = "dummy_name";
-        age = 18;
-        location = "dummy_location";
-        bio = "dummy_bio";
+        //name = "dummy_name";
+        //age = 18;
+        //location = "dummy_location";
+        //bio = "dummy_bio";
 
-        profile.setName(name);
-        profile.setAge(age);
-        profile.setLocation(location);
-        profile.setBio(bio);
+        name = (EditText) findViewById(R.id.EditTextName);
+        age = (EditText) findViewById(R.id.EditTextAge);
+        location = (EditText) findViewById(R.id.EditTextLocation);
+        bio = (EditText) findViewById(R.id.EditTextBio);
+        
+        profile.setName(name.getText().toString());
+        profile.setAge(Double.parseDouble(age.getText().toString()));
+        profile.setLocation(location.getText().toString());
+        profile.setBio(bio.getText().toString());
 
         new Thread(new Runnable() {
             @Override
