@@ -54,5 +54,6 @@
     <string name="profile_age">Age</string>
     <string name="profile_location">Location</string>
     <string name="profile_bio">Bio</string>
+    <string name="profile_setbank">Set Up Banking Info</string>
 
 </resources>
