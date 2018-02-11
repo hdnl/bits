@@ -39,7 +39,7 @@ public class ProfileDO {
     public void setAge(final Double _age) {
         this._age = _age;
     }
-    
+
     @DynamoDBAttribute(attributeName = "bio")
     public String getBio() {
         return _bio;
