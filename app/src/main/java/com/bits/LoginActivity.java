@@ -1,4 +1,4 @@
-package com;
+package com.bits;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -65,18 +65,18 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.example.krittikamanagoli.bits.R.layout.activity_login);
+        setContentView(com.bits.R.layout.activity_login);
         setupActionBar();
 
         // Set up the login form.
-        mEmailView = (AutoCompleteTextView) findViewById(com.example.krittikamanagoli.bits.R.id.email);
+        mEmailView = (AutoCompleteTextView) findViewById(com.bits.R.id.email);
         populateAutoComplete();
 
-        mPasswordView = (EditText) findViewById(com.example.krittikamanagoli.bits.R.id.password);
+        mPasswordView = (EditText) findViewById(com.bits.R.id.password);
         mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView textView, int id, KeyEvent keyEvent) {
-                if (id == com.example.krittikamanagoli.bits.R.id.login || id == EditorInfo.IME_NULL) {
+                if (id == com.bits.R.id.login || id == EditorInfo.IME_NULL) {
                     attemptLogin();
                     return true;
                 }
@@ -84,7 +84,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
         });
 
-        Button mEmailSignInButton = (Button) findViewById(com.example.krittikamanagoli.bits.R.id.email_sign_in_button);
+        Button mEmailSignInButton = (Button) findViewById(com.bits.R.id.email_sign_in_button);
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -92,8 +92,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
         });
 
-        mLoginFormView = findViewById(com.example.krittikamanagoli.bits.R.id.login_form);
-        mProgressView = findViewById(com.example.krittikamanagoli.bits.R.id.login_progress);
+        mLoginFormView = findViewById(com.bits.R.id.login_form);
+        mProgressView = findViewById(com.bits.R.id.login_progress);
 
         Runnable runnable = new Runnable() {
             public void run() {
@@ -121,7 +121,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             return true;
         }
         if (shouldShowRequestPermissionRationale(READ_CONTACTS)) {
-            Snackbar.make(mEmailView, com.example.krittikamanagoli.bits.R.string.permission_rationale, Snackbar.LENGTH_INDEFINITE)
+            Snackbar.make(mEmailView, com.bits.R.string.permission_rationale, Snackbar.LENGTH_INDEFINITE)
                     .setAction(android.R.string.ok, new View.OnClickListener() {
                         @Override
                         @TargetApi(Build.VERSION_CODES.M)
@@ -182,18 +182,18 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
         // Check for a valid password, if the user entered one.
         if (!TextUtils.isEmpty(password) && !isPasswordValid(password)) {
-            mPasswordView.setError(getString(com.example.krittikamanagoli.bits.R.string.error_invalid_password));
+            mPasswordView.setError(getString(com.bits.R.string.error_invalid_password));
             focusView = mPasswordView;
             cancel = true;
         }
 
         // Check for a valid email address.
         if (TextUtils.isEmpty(email)) {
-            mEmailView.setError(getString(com.example.krittikamanagoli.bits.R.string.error_field_required));
+            mEmailView.setError(getString(com.bits.R.string.error_field_required));
             focusView = mEmailView;
             cancel = true;
         } else if (!isEmailValid(email)) {
-            mEmailView.setError(getString(com.example.krittikamanagoli.bits.R.string.error_invalid_email));
+            mEmailView.setError(getString(com.bits.R.string.error_invalid_email));
             focusView = mEmailView;
             cancel = true;
         }
@@ -356,7 +356,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             if (success) {
                 finish();
             } else {
-                mPasswordView.setError(getString(com.example.krittikamanagoli.bits.R.string.error_incorrect_password));
+                mPasswordView.setError(getString(com.bits.R.string.error_incorrect_password));
                 mPasswordView.requestFocus();
             }
         }
