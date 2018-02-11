@@ -5,8 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.util.Log;
-import android.widget.Toast;
-
 
 import com.amazonaws.mobile.client.AWSMobileClient;
 import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.DynamoDBMapper;
@@ -29,13 +27,17 @@ public class CreateRequest extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_request);
+
+        // CURRENTLY FILLER VALUES
+        // set values from textviews here
+        requestAmount = 10;
+        title = "dummy_title";
+        description = "dummy_description";
+
+        submitRequest();
     }
 
-    private void submitRequest(double rAmount, String t, String d){
-        requestAmount = rAmount;
-        title = t;
-        description = d;
-
+    private void submitRequest(){
         AmazonDynamoDBClient dynamoDBClient = new AmazonDynamoDBClient(AWSMobileClient.getInstance().getCredentialsProvider());
         this.dynamoDBMapper = DynamoDBMapper.builder()
                 .dynamoDBClient(dynamoDBClient)
@@ -65,12 +67,6 @@ public class CreateRequest extends AppCompatActivity {
 
         transactionId = result.size() + 1;
         request.setTransactionId(transactionId);
-
-
-        // set values from textviews here
-        requestAmount = 10;
-        title = "dummy_title";
-        description = "dummy_description";
 
         request.setAmountRequested(requestAmount);
         request.setTitle(title);

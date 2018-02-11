@@ -34,8 +34,9 @@
             android:label="MainActivity" />
         <activity
             android:name=".FeedActivity"
-            android:label="Main2Activity"></activity>
-        <activity android:name=".CreateRequest"></activity>
+            android:label="Main2Activity" />
+        <activity android:name=".CreateRequest" />
+        <activity android:name=".CreateDonation"></activity>
     </application>
 
 </manifest>
