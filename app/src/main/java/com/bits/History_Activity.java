@@ -18,11 +18,11 @@ public class History_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.example.krittikamanagoli.bits.R.layout.user_history);
-        Toolbar toolbar = (Toolbar) findViewById(com.example.krittikamanagoli.bits.R.id.toolbar);
+        setContentView(com.bits.R.layout.user_history);
+        Toolbar toolbar = (Toolbar) findViewById(com.bits.R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(com.example.krittikamanagoli.bits.R.id.fab);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(com.bits.R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,7 +35,7 @@ public class History_Activity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(com.example.krittikamanagoli.bits.R.menu.menu_main, menu);
+        getMenuInflater().inflate(com.bits.R.menu.menu_main, menu);
         return true;
     }
 
@@ -47,7 +47,7 @@ public class History_Activity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == com.example.krittikamanagoli.bits.R.id.action_settings) {
+        if (id == com.bits.R.id.action_settings) {
             return true;
         }
 
