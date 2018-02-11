@@ -43,4 +43,12 @@
     <string name="request_4">Request #4</string>
     <string name="request_3">Request #3</string>
 
+
+    <!-- Strings related to create profile -->
+    <string name="create_profile">Create Profile</string>
+    <string name="profile_name">Name</string>
+    <string name="profile_age">Age</string>
+    <string name="profile_location">Location</string>
+    <string name="profile_bio">Bio</string>
+
 </resources>

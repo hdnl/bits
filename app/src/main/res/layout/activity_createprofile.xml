@@ -11,7 +11,7 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:gravity="center"
-        android:text="Create Profile"
+        android:text="@string/create_profile"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/background_light"
         android:textSize="30sp"
@@ -29,7 +29,7 @@
         android:layout_marginBottom="348dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:text="Name"
+        android:text="@string/profile_name"
         android:textColor="@android:color/background_light"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,7 +44,7 @@
         android:layout_marginBottom="296dp"
         android:layout_marginEnd="288dp"
         android:layout_marginTop="8dp"
-        android:text="Age"
+        android:text="@string/profile_age"
         android:textColor="@android:color/background_light"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -53,7 +53,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/EditTextAge"
         android:layout_width="132dp"
         android:layout_height="30dp"
         android:layout_marginBottom="292dp"
@@ -92,7 +92,7 @@
         android:layout_marginBottom="240dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:text="Location"
+        android:text="@string/profile_location"
         android:textColor="@android:color/background_light"
         android:textSize="@dimen/user_pools_button_text_size"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -101,7 +101,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/EditText9"
+        android:id="@+id/EditTextLocation"
         android:layout_width="129dp"
         android:layout_height="46dp"
         android:layout_marginBottom="240dp"
@@ -112,6 +112,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText7"
         app:layout_constraintVertical_bias="0.862"></EditText>
+
+    <EditText
+        android:id="@+id/EditTextBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="365dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_bio"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="308dp" />
 
 
 </android.support.constraint.ConstraintLayout>
