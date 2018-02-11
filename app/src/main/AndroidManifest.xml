@@ -35,7 +35,10 @@
         <activity
             android:name=".FeedActivity"
             android:label="Home"></activity>
-        <activity android:name=".CreateRequest"></activity>
+        <activity android:name=".CreateRequest"
+            android:label="Request"
+            ></activity>
+        <activity android:name=".MakeRequestTab"></activity>
     </application>
 
 </manifest>
