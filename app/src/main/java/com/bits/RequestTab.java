@@ -17,15 +17,9 @@ public class RequestTab extends Fragment {
 
     ProgressBar progressBar;
 
-
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-
-
         return inflater.inflate(R.layout.request_tab, container, false);
-
-
     }
 }
