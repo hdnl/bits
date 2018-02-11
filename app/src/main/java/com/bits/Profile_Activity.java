@@ -29,7 +29,7 @@ public class Profile_Activity extends AppCompatActivity {
         setContentView(com.bits.R.layout.user_profile);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+//        setSupportActionBar(toolbar);
 
         //initialize the objects
 

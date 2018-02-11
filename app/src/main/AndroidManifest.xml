@@ -18,8 +18,7 @@
         android:theme="@style/AppTheme">
 
         <activity android:name=".AuthenticatorActivity"
-            android:label="AuthenticatorActivity"
-            android:parentActivityName=".MainActivity">
+            android:label="AuthenticatorActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
@@ -37,12 +36,8 @@
             android:label="MainActivity">
         </activity>
         <activity
-            android:name=".FeedActivity"
-            android:label="FeedActivity"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+            android:name=".Main2Activity"
+            android:label="Main2Activity">
         </activity>
     </application>
 

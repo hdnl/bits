@@ -41,8 +41,6 @@ public class HistoryPage_Activity_ extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history_page__);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
@@ -145,8 +143,7 @@ public class HistoryPage_Activity_ extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
-            return 3;
+            return 2;
         }
     }
 }

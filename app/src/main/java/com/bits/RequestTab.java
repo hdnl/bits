@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 
 /**
  * Created by solivialeonvitervo on 2/10/18.
@@ -14,10 +15,17 @@ import android.view.ViewGroup;
 
 public class RequestTab extends Fragment {
 
+    ProgressBar progressBar;
+
+
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
+
         return inflater.inflate(R.layout.request_tab, container, false);
+
 
     }
 }
