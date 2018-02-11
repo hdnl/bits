@@ -19,8 +19,8 @@ public class RequestsDO {
     private Double _amountPaidback;
     private Double _amountReceived;
     private Double _amountRequested;
-    private Double _description;
-    private Double _title;
+    private String _description;
+    private String _title;
 
     @DynamoDBHashKey(attributeName = "userId")
     @DynamoDBAttribute(attributeName = "userId")
@@ -65,19 +65,19 @@ public class RequestsDO {
         this._amountRequested = _amountRequested;
     }
     @DynamoDBAttribute(attributeName = "description")
-    public Double getDescription() {
+    public String getDescription() {
         return _description;
     }
 
-    public void setDescription(final Double _description) {
+    public void setDescription(final String _description) {
         this._description = _description;
     }
     @DynamoDBAttribute(attributeName = "title")
-    public Double getTitle() {
+    public String getTitle() {
         return _title;
     }
 
-    public void setTitle(final Double _title) {
+    public void setTitle(final String _title) {
         this._title = _title;
     }
 
