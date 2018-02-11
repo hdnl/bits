@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
 
     <TextView
         android:id="@+id/textView2"
@@ -12,60 +13,83 @@
         android:layout_above="@+id/TextView6"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="464dp"
-        android:text="@string/textview"
+        android:text="Loans Given"
+        android:textColor="@android:color/background_light"
+        android:gravity="center"
+        android:textSize="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/TextView2"
-        android:layout_width="match_parent"
+        android:layout_width="363dp"
         android:layout_height="80dp"
         android:layout_marginBottom="372dp"
         android:layout_marginTop="8dp"
-        android:text="MultiAutoCompleteTextView"
+        android:text="User
+            Title
+            Description
+            Amount asked
+            Amount given"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="21dp" />
 
     <TextView
         android:id="@+id/TextView5"
-        android:layout_width="match_parent"
+        android:layout_width="361dp"
         android:layout_height="114dp"
         android:layout_marginBottom="236dp"
         android:layout_marginTop="8dp"
-        android:text="MultiAutoCompleteTextView"
+        android:text="User
+            Title
+            Description
+            Amount asked
+            Amount given"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="@+id/TextView7"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="23dp" />
 
     <TextView
         android:id="@+id/TextView6"
-        android:layout_width="match_parent"
+        android:layout_width="359dp"
         android:layout_height="117dp"
         android:layout_above="@+id/TextView7"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
-        android:text="MultiAutoCompleteTextView"
+        android:text="User
+            Title
+            Description
+            Amount asked
+            Amount given"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.727"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintVertical_bias="0.703"
+        tools:layout_editor_absoluteX="25dp" />
 
     <TextView
         android:id="@+id/TextView7"
-        android:layout_width="376dp"
+        android:layout_width="354dp"
         android:layout_height="103dp"
         android:layout_above="@+id/TextView4"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
-        android:text="MultiAutoCompleteTextView"
+        android:text="User
+            Title
+            Description
+            Amount asked
+            Amount given"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="4dp" />
+        tools:layout_editor_absoluteX="26dp" />
 
 </android.support.constraint.ConstraintLayout>
