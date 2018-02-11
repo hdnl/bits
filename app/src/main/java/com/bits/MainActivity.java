@@ -19,8 +19,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(com.bits.R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(com.bits.R.id.toolbar);
-        setSupportActionBar(toolbar);
         AWSMobileClient.getInstance().initialize(this).execute();
         AmazonDynamoDBClient dynamoDBClient = new AmazonDynamoDBClient(AWSMobileClient.getInstance().getCredentialsProvider());
         this.dynamoDBMapper = DynamoDBMapper.builder()
@@ -52,6 +50,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick(View view){
-        startActivity(new Intent(MainActivity.this, LoginActivity.class));
+        startActivity(new Intent(MainActivity.this, FeedActivity.class));
     }
 }
