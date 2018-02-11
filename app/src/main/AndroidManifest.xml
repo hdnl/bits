@@ -44,10 +44,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity
-            android:name=".FeedActivity"
-            android:label="@string/title_activity_feed"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".Main2Activity">
+
+        </activity>
+
     </application>
 
 </manifest>
