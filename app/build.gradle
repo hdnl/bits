@@ -44,4 +44,5 @@ dependencies {
     compile('com.amazonaws:aws-android-sdk-auth-ui:2.6.+@aar') { transitive = true; }
 
     testCompile 'junit:junit:4.12'
+
 }
