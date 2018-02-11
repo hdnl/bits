@@ -127,15 +127,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/profile_bio"
+        android:textColor="@android:color/background_light"
         tools:layout_editor_absoluteX="59dp"
         tools:layout_editor_absoluteY="308dp" />
 
     <Button
         android:id="@+id/ButtonInitBank"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="168dp"
+        android:layout_height="52dp"
         android:text="@string/profile_setbank"
-        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="427dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="97dp"
+        android:layout_height="54dp"
+        android:text="Submit Button"
+        tools:layout_editor_absoluteX="61dp"
         tools:layout_editor_absoluteY="427dp" />
 
 

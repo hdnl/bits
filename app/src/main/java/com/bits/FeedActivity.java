@@ -106,7 +106,7 @@ public class FeedActivity extends AppCompatActivity
             startActivity(new Intent(FeedActivity.this, HistoryPage_Activity_.class));
 
         } else if (id == R.id.create_request) {
-            startActivity(new Intent(FeedActivity.this, CreateRequest.class));
+            startActivity(new Intent(FeedActivity.this, MakeRequestTab.class));
 
 
         }

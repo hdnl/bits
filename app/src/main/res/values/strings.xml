@@ -12,7 +12,7 @@
     <string name="title_activity_login">Sign in</string>
 
 
-    <string name="request_tab">Request</string>
+    <string name="request_tab">Create Request</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
@@ -42,7 +42,7 @@
     <string name="request_5">Request #5</string>
     <string name="request_4">Request #4</string>
     <string name="request_3">Request #3</string>
-    <string name="request_option">Item</string>
+    <string name="request_option">Create Request</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
