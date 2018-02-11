@@ -37,11 +37,18 @@ import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;
 
 import com.amazonaws.mobile.auth.core.IdentityManager;
 import com.amazonaws.mobile.config.AWSConfiguration;
+import com.reimaginebanking.api.nessieandroidsdk.NessieError;
+import com.reimaginebanking.api.nessieandroidsdk.NessieResultsListener;
+import com.reimaginebanking.api.nessieandroidsdk.constants.AccountType;
+import com.reimaginebanking.api.nessieandroidsdk.models.Account;
+import com.reimaginebanking.api.nessieandroidsdk.models.Customer;
+import com.reimaginebanking.api.nessieandroidsdk.requestclients.NessieClient;
 
 
 public class CreateProfile extends AppCompatActivity {
     DynamoDBMapper dynamoDBMapper;
     EditText name, location, bio, age;
+    Button bank_button;
 
 
     @Override
@@ -80,11 +87,70 @@ public class CreateProfile extends AppCompatActivity {
         age = (EditText) findViewById(R.id.EditTextAge);
         location = (EditText) findViewById(R.id.EditTextLocation);
         bio = (EditText) findViewById(R.id.EditTextBio);
-        
+        bank_button = (Button) findViewById(R.id.ButtonInitBank);
+
         profile.setName(name.getText().toString());
         profile.setAge(Double.parseDouble(age.getText().toString()));
         profile.setLocation(location.getText().toString());
         profile.setBio(bio.getText().toString());
+
+        bank_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NessieClient client = NessieClientWrapper.getNessieClient();
+                com.reimaginebanking.api.nessieandroidsdk.models.Address address = new com.reimaginebanking.api.nessieandroidsdk.models.Address.Builder()
+                        .state("VA")
+                        .city("Williamsburg")
+                        .streetName("Main")
+                        .streetNumber("123")
+                        .zip("22043")
+                        .build();
+
+                Customer customer = new Customer.Builder()
+                        .firstName(name.getText().toString())
+                        .lastName("last-name")
+                        .address(address)
+                        .build();
+
+                client.CUSTOMER.createCustomer(customer, new NessieResultsListener() {
+                    @Override
+                    public void onSuccess(Object result) {
+                        Log.d("addCustomerSuccess", "addCustomer success!");
+                    }
+
+                    @Override
+                    public void onFailure(NessieError error) {
+                        Log.d("addCustomerFailure", "addCustomer failed!");
+                        Log.d("errorCulprit", error.getCulprit().toString());
+                        Log.d("errorMessage", error.getMessage());
+                    }
+                });
+
+                Account account = new Account.Builder()
+                        .balance(500)
+                        .accountNumber("1")
+                        .nickname("nickname")
+                        .rewards(0)
+                        .type(AccountType.CHECKING)
+                        .build();
+
+                client.ACCOUNT.createAccount(customer.getId(), account, new NessieResultsListener() {
+                    @Override
+                    public void onSuccess(Object result) {
+                        Log.d("createAccountSuccess", "addAccount success!");
+                    }
+
+                    @Override
+                    public void onFailure(NessieError error) {
+                        Log.d("addAccountFailure", "addAccount failed!");
+                        Log.d("errorCulprit", error.getCulprit().toString());
+                        Log.d("errorMessage", error.getMessage());
+
+                    }
+                });
+
+            }
+        });
 
         new Thread(new Runnable() {
             @Override
