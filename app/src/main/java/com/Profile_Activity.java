@@ -1,4 +1,4 @@
-package com.example.krittikamanagoli.bits;
+package com;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -22,22 +22,22 @@ public class Profile_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.user_profile);
+        setContentView(com.example.krittikamanagoli.bits.R.layout.user_profile);
 
         //initialize the objects
 
-        editText = (EditText) findViewById(R.id.editText);
-        editText2 = (EditText) findViewById(R.id.editText2);
-        editText3 = (EditText) findViewById(R.id.editText3);
-        editText4 = (EditText) findViewById(R.id.editText4);
-        button = (Button) findViewById(R.id.button);
-        imageButton = (ImageButton) findViewById(R.id.imageButton);
+        editText = (EditText) findViewById(com.example.krittikamanagoli.bits.R.id.editText);
+        editText2 = (EditText) findViewById(com.example.krittikamanagoli.bits.R.id.editText2);
+        editText3 = (EditText) findViewById(com.example.krittikamanagoli.bits.R.id.editText3);
+        editText4 = (EditText) findViewById(com.example.krittikamanagoli.bits.R.id.editText4);
+        button = (Button) findViewById(com.example.krittikamanagoli.bits.R.id.button);
+        imageButton = (ImageButton) findViewById(com.example.krittikamanagoli.bits.R.id.imageButton);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(com.example.krittikamanagoli.bits.R.menu.menu_main, menu);
         return true;
     }
 
@@ -49,7 +49,7 @@ public class Profile_Activity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == com.example.krittikamanagoli.bits.R.id.action_settings) {
             return true;
         }
 

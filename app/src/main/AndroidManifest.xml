@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.krittikamanagoli.bits">
+    package="com.bits">
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="com.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -27,17 +27,17 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Profile_Activity">
+        <activity android:name="com.Profile_Activity">
 
         </activity>
 
         <activity
-            android:name=".LoginActivity"
+            android:name="com.LoginActivity"
             android:label="@string/title_activity_login"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.krittikamanagoli.bits.MainActivity" />
+                android:value="com.bits.com.MainActivity" />
         </activity>
 
     </application>

@@ -1,4 +1,4 @@
-package com.example.krittikamanagoli.bits;
+package com.bits;
 
 import org.junit.Test;
 
