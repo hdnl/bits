@@ -31,12 +31,13 @@
         </activity>
         <activity android:name=".Profile_Activity"></activity>
         <activity android:name=".HistoryPage_Activity_"></activity>
+        <activity android:name=".CreateProfile"></activity>
         <activity
             android:name=".MainActivity"
             android:label="MainActivity">
         </activity>
         <activity
-            android:name=".Main2Activity"
+            android:name=".FeedActivity"
             android:label="Main2Activity">
         </activity>
     </application>

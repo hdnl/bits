@@ -3,7 +3,6 @@ package com.bits;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -50,6 +49,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick(View view){
-        startActivity(new Intent(MainActivity.this, Main2Activity.class));
+        startActivity(new Intent(MainActivity.this, FeedActivity.class));
     }
 }
