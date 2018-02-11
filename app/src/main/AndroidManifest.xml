@@ -37,17 +37,13 @@
             android:label="MainActivity">
         </activity>
         <activity
-            android:name=".LoginActivity"
-            android:label="LoginActivity"
+            android:name=".FeedActivity"
+            android:label="FeedActivity"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity
-            android:name=".FeedActivity"
-            android:label="@string/title_activity_feed"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
