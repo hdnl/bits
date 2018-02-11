@@ -34,5 +34,7 @@ public class CreateProfile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_createprofile);
+
+
     }
 }
