@@ -3,43 +3,48 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
 
     <TextView
         android:id="@+id/editText15"
-        android:layout_width="204dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="197dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="268dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="164dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="5dp"
         android:ems="10"
         android:text="Name"
+        android:textColor="@android:color/background_light"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.002" />
+        app:layout_constraintVertical_bias="0.065" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="144dp"
-        android:layout_height="94dp"
+        android:layout_width="92dp"
+        android:layout_height="89dp"
         android:layout_marginBottom="396dp"
-        android:layout_marginEnd="236dp"
+        android:layout_marginEnd="276dp"
         android:layout_marginTop="8dp"
+        android:background="@drawable/user"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="374dp"
-        android:layout_height="83dp"
+        android:layout_height="63dp"
         android:layout_marginBottom="8dp"
-        android:text="TextView"
+        android:text="Loan Received:"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="5dp" />
@@ -47,11 +52,12 @@
     <TextView
         android:id="@+id/TextView0"
         android:layout_width="387dp"
-        android:layout_height="88dp"
-        android:layout_marginBottom="108dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
-        android:text="Text"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Loan Received:"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints"
@@ -59,55 +65,63 @@
 
     <TextView
         android:id="@+id/TextView8"
-        android:layout_width="match_parent"
-        android:layout_height="76dp"
-        android:layout_marginBottom="216dp"
+        android:layout_width="380dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
-        android:text="Text"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Loan Received:"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/TextView0"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="2dp" />
 
     <TextView
         android:id="@+id/Text12"
-        android:layout_width="wrap_content"
-        android:layout_height="46dp"
-        android:layout_marginBottom="408dp"
-        android:layout_marginStart="164dp"
+        android:layout_width="176dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="390dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:text="Text"
+        android:text="Age"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.821"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.959" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/Text14"
-        android:layout_width="226dp"
-        android:layout_height="67dp"
+        android:layout_width="208dp"
+        android:layout_height="49dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:text="Text"
+        android:text="Location"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.985"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.238" />
+        app:layout_constraintVertical_bias="0.289" />
 
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="146dp"
-        android:layout_height="48dp"
+        android:layout_width="145dp"
+        android:layout_height="35dp"
         android:layout_marginEnd="236dp"
         android:layout_marginTop="128dp"
+        android:progressBackgroundTint="@android:color/background_light"
+        android:progressTint="@android:color/background_light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -118,9 +132,21 @@
         android:layout_marginBottom="8dp"
         android:layout_marginTop="100dp"
         android:text="Progress"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.002"
         tools:layout_editor_absoluteX="4dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="382dp"
+        android:layout_height="65dp"
+        android:text="Request Description: "
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448"
+        tools:layout_editor_absoluteX="1dp" />
 
 </android.support.constraint.ConstraintLayout>

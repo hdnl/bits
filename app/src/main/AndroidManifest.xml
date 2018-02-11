@@ -31,10 +31,10 @@
         <activity android:name=".CreateProfile" />
         <activity
             android:name=".MainActivity"
-            android:label="MainActivity" />
+            android:label="Bits" />
         <activity
             android:name=".FeedActivity"
-            android:label="Main2Activity"></activity>
+            android:label="Home"></activity>
         <activity android:name=".CreateRequest"></activity>
     </application>
 

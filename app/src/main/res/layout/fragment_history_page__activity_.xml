@@ -4,7 +4,8 @@
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.bits.HistoryPage_Activity_$PlaceholderFragment">
+    tools:context="com.bits.HistoryPage_Activity_$PlaceholderFragment"
+    android:background="@drawable/background">
 
     <TextView
         android:id="@+id/section_label"
