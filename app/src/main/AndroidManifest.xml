@@ -22,22 +22,20 @@
             android:label="AuthenticatorActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".Profile_Activity" />
+        <activity android:name=".HistoryPage_Activity_" />
+        <activity android:name=".CreateProfile" />
         <activity
             android:name=".MainActivity"
             android:label="MainActivity" />
-        <activity android:name=".CreateProfile" />
-
-        <activity android:name=".FeedActivity"
-        android:label="Feed"></activity>
-
-        <activity android:name=".CreateRequest"/>
-        <activity android:name=".Profile_Activity" />
-        <activity android:name=".HistoryPage_Activity_" />
-
+        <activity
+            android:name=".FeedActivity"
+            android:label="Main2Activity"></activity>
+        <activity android:name=".CreateRequest"></activity>
     </application>
 
 </manifest>
