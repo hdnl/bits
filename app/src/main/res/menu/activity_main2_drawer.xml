@@ -6,6 +6,9 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/create_request"
+            android:title="@string/request_option" />
+        <item
             android:id="@+id/nav_camera"
             android:icon="@drawable/ic_menu_gallery"
             android:title="User Profile" />

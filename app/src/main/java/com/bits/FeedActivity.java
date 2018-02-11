@@ -78,7 +78,8 @@ public class FeedActivity extends AppCompatActivity
         } else if (id == R.id.nav_gallery) {
             startActivity(new Intent(FeedActivity.this, HistoryPage_Activity_.class));
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.create_request) {
+            startActivity(new Intent(FeedActivity.this, CreateRequest.class));
 
 
         }

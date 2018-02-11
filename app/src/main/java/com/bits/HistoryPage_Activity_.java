@@ -135,6 +135,9 @@ public class HistoryPage_Activity_ extends AppCompatActivity {
                 case 1:
                     DonationsTab tab2 = new DonationsTab();
                     return tab2;
+                case 2:
+                    MakeRequestTab tab3 = new MakeRequestTab();
+                    return tab3;
             }
             return null;
 

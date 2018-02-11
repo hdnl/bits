@@ -1,4 +1,4 @@
-/*
+package com.bits;/*
 package com.bits;
 
 
@@ -10,32 +10,40 @@ import com.reimaginebanking.api.nessieandroidsdk.requestclients.NessieClient;
 import java.util.List;
 
 */
+
+import com.reimaginebanking.api.nessieandroidsdk.requestclients.NessieClient;
+
 /**
  * NessieClientWrapper
  *
  * NessieClient class grants access to Nessie's API endpoints, this wrapper is intended to
  * simplify and protect access to the client.
  *
- *//*
+ */
 
 public class NessieClientWrapper {
-    private NessieClient client;
+    static private NessieClient client;
 
-    */
-/**
+
+    /**
      * Constructor
-     *//*
+     */
 
     public NessieClientWrapper() {
-        this.client = NessieClient.getInstance("7107cab1a4111154c6e289ad419371c4");
+
     }
 
-    public NessieClient getNessieClient(){
+    public static NessieClient getNessieClient() {
+        client = NessieClient.getInstance("7107cab1a4111154c6e289ad419371c4");
+
         return client;
+
     }
+
+}
 
     // for testing purposes
-   */
+
 /*public static void main(String [ ] args){
         NessieClientWrapper wrapper = new NessieClientWrapper();
 
@@ -54,5 +62,5 @@ public class NessieClientWrapper {
         });
     }*//*
 
-}
+
 */
