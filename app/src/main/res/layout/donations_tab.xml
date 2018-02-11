@@ -1,54 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/textview" />
+        android:layout_height="41dp"
+        android:layout_above="@+id/TextView6"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="464dp"
+        android:text="@string/textview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
-    <MultiAutoCompleteTextView
-        android:id="@+id/multiAutoCompleteTextView"
+    <TextView
+        android:id="@+id/TextView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="MultiAutoCompleteTextView" />
+        android:layout_height="80dp"
+        android:layout_marginBottom="372dp"
+        android:layout_marginTop="8dp"
+        android:text="MultiAutoCompleteTextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp" />
 
-    <MultiAutoCompleteTextView
-        android:id="@+id/multiAutoCompleteTextView2"
+    <TextView
+        android:id="@+id/TextView5"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="MultiAutoCompleteTextView" />
+        android:layout_height="114dp"
+        android:layout_marginBottom="236dp"
+        android:layout_marginTop="8dp"
+        android:text="MultiAutoCompleteTextView"
+        app:layout_constraintBottom_toBottomOf="@+id/TextView7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp" />
 
-    <MultiAutoCompleteTextView
-        android:id="@+id/multiAutoCompleteTextView3"
+    <TextView
+        android:id="@+id/TextView6"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="MultiAutoCompleteTextView" />
+        android:layout_height="117dp"
+        android:layout_above="@+id/TextView7"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="MultiAutoCompleteTextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727"
+        tools:layout_editor_absoluteX="0dp" />
 
-    <MultiAutoCompleteTextView
-        android:id="@+id/multiAutoCompleteTextView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="MultiAutoCompleteTextView" />
+    <TextView
+        android:id="@+id/TextView7"
+        android:layout_width="376dp"
+        android:layout_height="103dp"
+        android:layout_above="@+id/TextView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="MultiAutoCompleteTextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="4dp" />
 
-    <MultiAutoCompleteTextView
-        android:id="@+id/multiAutoCompleteTextView5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="MultiAutoCompleteTextView" />
-
-    <MultiAutoCompleteTextView
-        android:id="@+id/multiAutoCompleteTextView6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="MultiAutoCompleteTextView" />
-
-    <MultiAutoCompleteTextView
-        android:id="@+id/multiAutoCompleteTextView7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="MultiAutoCompleteTextView" />
-
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>

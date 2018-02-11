@@ -32,6 +32,15 @@
     <string name="tab_text_3">Tab 3</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="textview">TextView</string>
-    <string name="title_activity_feed">FeedActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="request_1">Request #1</string>
+    <string name="request_2">Request #2</string>
+    <string name="request_feed">REQUEST FEED</string>
+    <string name="request_5">Request #5</string>
+    <string name="request_4">Request #4</string>
+    <string name="request_3">Request #3</string>
 
 </resources>

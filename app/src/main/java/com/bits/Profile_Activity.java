@@ -1,12 +1,17 @@
 package com.bits;
 
 import android.os.Bundle;
+import android.support.design.widget.NavigationView;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.support.v7.widget.Toolbar;
+import android.widget.TextView;
 
 /**
  * Created by solivialeonvitervo on 2/10/18.
@@ -14,7 +19,7 @@ import android.widget.ImageButton;
 
 public class Profile_Activity extends AppCompatActivity {
 
-    private EditText editText, editText2 , editText3, editText4;
+    private TextView editText, editText2 , editText3, editText4;
     private Button button;
     private ImageButton imageButton;
 
@@ -24,14 +29,19 @@ public class Profile_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(com.bits.R.layout.user_profile);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
+
         //initialize the objects
 
-        editText = (EditText) findViewById(com.bits.R.id.editText);
-        editText2 = (EditText) findViewById(com.bits.R.id.editText2);
-        editText3 = (EditText) findViewById(com.bits.R.id.editText3);
-        editText4 = (EditText) findViewById(com.bits.R.id.editText4);
+        editText = (TextView) findViewById(com.bits.R.id.editText);
+        editText2 = (TextView) findViewById(com.bits.R.id.editText2);
+        editText3 = (TextView) findViewById(com.bits.R.id.editText3);
+        editText4 = (TextView) findViewById(com.bits.R.id.editText4);
         button = (Button) findViewById(com.bits.R.id.button);
         imageButton = (ImageButton) findViewById(com.bits.R.id.imageButton);
+
+
     }
 
     @Override
@@ -56,3 +66,5 @@ public class Profile_Activity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 }
+
+
